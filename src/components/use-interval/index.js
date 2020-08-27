@@ -6,7 +6,7 @@ function useInterval(callback, delay) {
     // Remember the latest callback.
     useEffect(() => {
         savedCallback.current = callback;
-        console.log('useInterval 1');
+        console.log('useInterval 1111111111111');
     }, [callback]);
 
     // Set up the interval.
@@ -18,10 +18,10 @@ function useInterval(callback, delay) {
             let id = setInterval(tick, delay);
             return () => clearInterval(id);
         }
-        console.log('useInterval 2');
+        console.log('useInterval 2222222222222222');
     }, [delay]);
 
-    console.log('useInterval call');
+    console.log('useInterval render');
 }
 
 export default useInterval;
